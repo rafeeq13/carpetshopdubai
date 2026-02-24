@@ -1,0 +1,294 @@
+/****************************
+ * BLOG LISTING STYLES
+ ****************************/
+.blog-container {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.blog-list h1 {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.blog-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.blog-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.blog-card h2 {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 15px 20px 10px;
+  color: #222;
+  line-height: 1.4;
+}
+
+.blog-card p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 0 20px 20px;
+}
+
+.blog-card .read-more {
+  display: inline-block;
+  margin: 0 20px 20px;
+  padding: 10px 20px;
+  background: #b8860b;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.blog-card .read-more:hover {
+  background: #8b6d0d;
+}
+
+/****************************
+ * SINGLE BLOG PAGE STYLES
+ ****************************/
+.blog-single {
+  max-width: 900px;
+  margin: 80px auto;
+  background: #fff;
+  padding: 40px 40px 60px;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+}
+
+.blog-single h1 {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #222;
+  line-height: 1.3;
+}
+
+.blog-single .meta {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.blog-single img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 30px 0;
+}
+
+.blog-single h2, .blog-single h3 {
+  font-weight: 600;
+  color: #333;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+.blog-single p {
+  font-size: 17px;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.blog-single ul, .blog-single ol {
+  margin-left: 25px;
+  margin-bottom: 20px;
+  color: #555;
+  line-height: 1.8;
+}
+
+.blog-single li {
+  margin-bottom: 8px;
+}
+
+.blog-single a {
+  color: #b8860b;
+  text-decoration: underline;
+}
+
+.blog-single a:hover {
+  color: #8b6d0d;
+}
+
+/****************************
+ * QUOTE / TIPS BOX
+ ****************************/
+.blog-quote, .blog-tip {
+  background: #fff8e1;
+  border-left: 5px solid #b8860b;
+  padding: 15px 20px;
+  margin: 25px 0;
+  font-style: italic;
+  color: #555;
+}
+
+/****************************
+ * SHARE SECTION
+ ****************************/
+.blog-share {
+  margin-top: 40px;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.blog-share p {
+  margin: 0;
+  font-weight: 600;
+  color: #333;
+}
+
+.blog-share .icons a {
+  color: #fff;
+  background: #b8860b;
+  border-radius: 50%;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+
+.blog-share .icons a:hover {
+  background: #8b6d0d;
+}
+
+/****************************
+ * RELATED POSTS
+ ****************************/
+.related-posts {
+  margin-top: 60px;
+}
+
+.related-posts h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.related-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.related-card:hover {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  transform: translateY(-3px);
+}
+
+.related-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.related-card h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+  padding: 15px;
+}
+
+.related-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/****************************
+ * RESPONSIVE DESIGN
+ ****************************/
+@media (max-width: 768px) {
+  .blog-single {
+    padding: 25px 20px 40px;
+  }
+  .blog-single h1 {
+    font-size: 26px;
+  }
+  .blog-single h2 {
+    font-size: 22px;
+  }
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+.blog-single .faq h4 {
+  font-size: 18px;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.blog-single .faq p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.blog-single .faq {
+  margin-top: 30px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 25px 20px;
+  border-left: 4px solid #b8860b;
+}
+
+.blog-single .faq h4::before {
+  content: "❓ ";
+  color: #b8860b;
+}
+
+.blog-single strong {
+  color: #b8860b;
+}
+
+.blog-single ul li {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
